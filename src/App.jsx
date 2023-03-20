@@ -1,10 +1,11 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import Clock from './components/Clock';
+import ClockList from './components/ClockList';
 
 class App extends React.Component {
     render() {
-        return <Clock />;
+        const quantities = [1, 2, 3];
+        return <ClockList quantities={quantities} />;
     }
 }
 
