@@ -4,9 +4,11 @@ import React from 'react';
 // import Form from './components/Form';
 // import Calculator from './components/Calculator';
 // import Text from './components/inheritance/Text';
-import Bracket from './components/composition/Bracket';
-import Emoji from './components/composition/Emoji';
-import Text from './components/composition/Text';
+// import Bracket from './components/composition/Bracket';
+// import Emoji from './components/composition/Emoji';
+// import Text from './components/composition/Text';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 class App extends React.Component {
     render() {
@@ -15,13 +17,17 @@ class App extends React.Component {
             // return <ClockList quantities={quantities} />;
             // <Form />
             // <Calculator />
-            <Emoji>
-                {({ addEmoji }) => (
-                    <Bracket>
-                        {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
-                    </Bracket>
-                )}
-            </Emoji>
+            // <Emoji>
+            //     {({ addEmoji }) => (
+            //         <Bracket>
+            //             {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
+            //         </Bracket>
+            //     )}
+            // </Emoji>
+            <div className="App">
+                <ClickCounter />
+                <HoverCounter />
+            </div>
         );
     }
 }
