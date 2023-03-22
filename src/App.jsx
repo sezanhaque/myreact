@@ -9,6 +9,8 @@ import React from 'react';
 // import Text from './components/composition/Text';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+// import User from './components/User';
+import Counter from './components/Counter';
 
 class App extends React.Component {
     render() {
@@ -25,8 +27,19 @@ class App extends React.Component {
             //     )}
             // </Emoji>
             <div className="App">
-                <ClickCounter />
-                <HoverCounter />
+                {/* <ClickCounter />
+                <HoverCounter /> */}
+                {/* <User render={(isLoggedIn) => (isLoggedIn ? 'Sezan' : 'Guest')} /> */}
+                <Counter>
+                    {(counter, incrementCount) => (
+                        <ClickCounter count={counter} incrementCount={incrementCount} />
+                    )}
+                </Counter>
+                <Counter>
+                    {(counter, incrementCount) => (
+                        <HoverCounter count={counter} incrementCount={incrementCount} />
+                    )}
+                </Counter>
             </div>
         );
     }
