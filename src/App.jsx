@@ -1,4 +1,5 @@
-/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/jsx-no-constructed-context-values */
+/* eslint-disable react/no-unused-state */
 import React from 'react';
 // import ClockList from './components/ClockList';
 // import Form from './components/Form';
@@ -7,13 +8,20 @@ import React from 'react';
 // import Bracket from './components/composition/Bracket';
 // import Emoji from './components/composition/Emoji';
 // import Text from './components/composition/Text';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ClickCounter from './components/render props/ClickCounter';
+// import HoverCounter from './components/render props/HoverCounter';
 // import User from './components/User';
-import Counter from './components/Counter';
+import Section from './components/context api/Section';
+import Counter from './components/render props/Counter';
+import ThemeContext from './contexts/themeContext';
 
 class App extends React.Component {
+    state = {
+        theme: 'dark',
+    };
+
     render() {
+        const { theme } = this.state;
         return (
             // const quantities = [1, 2, 3];
             // return <ClockList quantities={quantities} />;
@@ -35,11 +43,9 @@ class App extends React.Component {
                         <ClickCounter count={counter} incrementCount={incrementCount} />
                     )}
                 </Counter>
-                <Counter>
-                    {(counter, incrementCount) => (
-                        <HoverCounter count={counter} incrementCount={incrementCount} />
-                    )}
-                </Counter>
+                <ThemeContext.Provider value={{ theme }}>
+                    <Section />
+                </ThemeContext.Provider>
             </div>
         );
     }
