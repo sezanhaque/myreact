@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable react/no-unused-state */
 import React from 'react';
+import Todo from './components/useState/Todo';
 // import ClockList from './components/ClockList';
 // import Form from './components/Form';
 // import Calculator from './components/Calculator';
@@ -8,12 +9,13 @@ import React from 'react';
 // import Bracket from './components/composition/Bracket';
 // import Emoji from './components/composition/Emoji';
 // import Text from './components/composition/Text';
-import ClickCounter from './components/render props/ClickCounter';
+// import ClickCounter from './components/render props/ClickCounter';
 // import HoverCounter from './components/render props/HoverCounter';
 // import User from './components/User';
-import Section from './components/context api/Section';
-import Counter from './components/render props/Counter';
-import ThemeContext from './contexts/themeContext';
+// import Section from './components/context api/Section';
+// import Counter from './components/render props/Counter';
+// import ThemeContext from './contexts/themeContext';
+import Counter from './components/useState/Counter';
 
 class App extends React.Component {
     state = {
@@ -45,14 +47,16 @@ class App extends React.Component {
                 {/* <ClickCounter />
                 <HoverCounter /> */}
                 {/* <User render={(isLoggedIn) => (isLoggedIn ? 'Sezan' : 'Guest')} /> */}
-                <Counter>
+                {/* <Counter>
                     {(counter, incrementCount) => (
                         <ClickCounter count={counter} incrementCount={incrementCount} />
                     )}
                 </Counter>
                 <ThemeContext.Provider value={this.state}>
                     <Section />
-                </ThemeContext.Provider>
+                </ThemeContext.Provider> */}
+                <Todo />
+                <Counter />
             </div>
         );
     }
