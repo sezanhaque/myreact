@@ -47,6 +47,8 @@ class App extends React.Component {
                 {/* <ClickCounter />
                 <HoverCounter /> */}
                 {/* <User render={(isLoggedIn) => (isLoggedIn ? 'Sezan' : 'Guest')} /> */}
+
+                {/* Context Api */}
                 {/* <Counter>
                     {(counter, incrementCount) => (
                         <ClickCounter count={counter} incrementCount={incrementCount} />
@@ -55,8 +57,12 @@ class App extends React.Component {
                 <ThemeContext.Provider value={this.state}>
                     <Section />
                 </ThemeContext.Provider> */}
+                {/* Context Api */}
+
+                {/* useState */}
                 <Todo />
                 <Counter />
+                {/* useState */}
             </div>
         );
     }
