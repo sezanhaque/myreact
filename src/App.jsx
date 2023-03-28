@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable react/no-unused-state */
 import React from 'react';
-import Todo from './components/useState/Todo';
 // import ClockList from './components/ClockList';
 // import Form from './components/Form';
 // import Calculator from './components/Calculator';
@@ -15,7 +14,7 @@ import Todo from './components/useState/Todo';
 // import Section from './components/context api/Section';
 // import Counter from './components/render props/Counter';
 // import ThemeContext from './contexts/themeContext';
-import Counter from './components/useState/Counter';
+import DateComponentFunctional from './components/useEffect/DateComponentFunctional';
 
 class App extends React.Component {
     state = {
@@ -60,9 +59,13 @@ class App extends React.Component {
                 {/* Context Api */}
 
                 {/* useState */}
-                <Todo />
-                <Counter />
+                {/* <Todo />
+                <Counter /> */}
                 {/* useState */}
+                {/* useEffect */}
+                {/* <DateComponent /> */}
+                <DateComponentFunctional />
+                {/* useEffect */}
             </div>
         );
     }
