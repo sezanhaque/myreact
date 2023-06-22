@@ -15,7 +15,8 @@ import React from 'react';
 // import Counter from './components/render props/Counter';
 // import ThemeContext from './contexts/themeContext';
 // import DateComponentFunctional from './components/useEffect/DateComponentFunctional';
-import Form from './components/userRef/Form';
+// import Form from './components/userRef/Form';
+import Increment from './components/useMemo_UseCallBack/Increment';
 
 class App extends React.Component {
     state = {
@@ -68,8 +69,11 @@ class App extends React.Component {
                 {/* <DateComponentFunctional /> */}
                 {/* useEffect */}
                 {/* userRef */}
-                <Form />
+                {/* <Form /> */}
                 {/* userRef */}
+                {/* useCallback */}
+                <Increment />
+                {/* useCallback */}
             </div>
         );
     }
