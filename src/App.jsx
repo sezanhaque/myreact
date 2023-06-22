@@ -14,7 +14,8 @@ import React from 'react';
 // import Section from './components/context api/Section';
 // import Counter from './components/render props/Counter';
 // import ThemeContext from './contexts/themeContext';
-import DateComponentFunctional from './components/useEffect/DateComponentFunctional';
+// import DateComponentFunctional from './components/useEffect/DateComponentFunctional';
+import Form from './components/userRef/Form';
 
 class App extends React.Component {
     state = {
@@ -64,8 +65,11 @@ class App extends React.Component {
                 {/* useState */}
                 {/* useEffect */}
                 {/* <DateComponent /> */}
-                <DateComponentFunctional />
+                {/* <DateComponentFunctional /> */}
                 {/* useEffect */}
+                {/* userRef */}
+                <Form />
+                {/* userRef */}
             </div>
         );
     }
