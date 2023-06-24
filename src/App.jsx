@@ -20,11 +20,15 @@
 // import ComplexCounter from './components/useReducer/ComplexCounter';
 // import Counter from './components/useReducer/Counter';
 
-import LayoutComponentOne from './components/customHook/LayoutComponent';
+// import LayoutComponentOne from './components/customHook/LayoutComponent';
 
 // import ComplexCounter from './components/useReducer/ComplexCounter';
 // import GetPost from './components/useReducer/GetPost';
 // import GetPostReducer from './components/useReducer/GetPostReducer';
+
+import Logo from './components/Logo';
+
+import './assets/css/global.css';
 
 export default function App() {
     // state = {
@@ -88,8 +92,9 @@ export default function App() {
             {/* <GetPostReducer /> */}
             {/* useReducer with useEffect */}
             {/* customHook */}
-            <LayoutComponentOne />
+            {/* <LayoutComponentOne /> */}
             {/* customHook */}
+            <Logo />
         </div>
     );
 }
