@@ -1,6 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-no-constructed-context-values */
 /* eslint-disable react/no-unused-state */
-import React from 'react';
 // import ClockList from './components/ClockList';
 // import Form from './components/Form';
 // import Calculator from './components/Calculator';
@@ -16,41 +16,45 @@ import React from 'react';
 // import ThemeContext from './contexts/themeContext';
 // import DateComponentFunctional from './components/useEffect/DateComponentFunctional';
 // import Form from './components/userRef/Form';
-import Increment from './components/useMemo_UseCallBack/Increment';
+// import Increment from './components/useMemo_UseCallBack/Increment';
+// import ComplexCounter from './components/useReducer/ComplexCounter';
+// import Counter from './components/useReducer/Counter';
 
-class App extends React.Component {
-    state = {
-        theme: 'dark',
-        switchTheme: () => {
-            this.setState(({ theme }) => {
-                if (theme === 'dark') {
-                    return { theme: 'light' };
-                }
-                return { theme: 'dark' };
-            });
-        },
-    };
+// import ComplexCounter from './components/useReducer/ComplexCounter';
+import GetPost from './components/useReducer/GetPost';
+import GetPostReducer from './components/useReducer/GetPostReducer';
 
-    render() {
-        return (
-            // const quantities = [1, 2, 3];
-            // return <ClockList quantities={quantities} />;
-            // <Form />
-            // <Calculator />
-            // <Emoji>
-            //     {({ addEmoji }) => (
-            //         <Bracket>
-            //             {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
-            //         </Bracket>
-            //     )}
-            // </Emoji>
-            <div className="App">
-                {/* <ClickCounter />
+export default function App() {
+    // state = {
+    //     theme: 'dark',
+    //     switchTheme: () => {
+    //         this.setState(({ theme }) => {
+    //             if (theme === 'dark') {
+    //                 return { theme: 'light' };
+    //             }
+    //             return { theme: 'dark' };
+    //         });
+    //     },
+    // };
+
+    return (
+        // const quantities = [1, 2, 3];
+        // return <ClockList quantities={quantities} />;
+        // <Form />
+        // <Calculator />
+        // <Emoji>
+        //     {({ addEmoji }) => (
+        //         <Bracket>
+        //             {({ addBracket }) => <Text addEmoji={addEmoji} addBracket={addBracket} />}
+        //         </Bracket>
+        //     )}
+        // </Emoji>
+        <div className="App">
+            {/* <ClickCounter />
                 <HoverCounter /> */}
-                {/* <User render={(isLoggedIn) => (isLoggedIn ? 'Sezan' : 'Guest')} /> */}
-
-                {/* Context Api */}
-                {/* <Counter>
+            {/* <User render={(isLoggedIn) => (isLoggedIn ? 'Sezan' : 'Guest')} /> */}
+            {/* Context Api */}
+            {/* <Counter>
                     {(counter, incrementCount) => (
                         <ClickCounter count={counter} incrementCount={incrementCount} />
                     )}
@@ -58,25 +62,29 @@ class App extends React.Component {
                 <ThemeContext.Provider value={this.state}>
                     <Section />
                 </ThemeContext.Provider> */}
-                {/* Context Api */}
-
-                {/* useState */}
-                {/* <Todo />
+            {/* Context Api */}
+            {/* useState */}
+            {/* <Todo />
                 <Counter /> */}
-                {/* useState */}
-                {/* useEffect */}
-                {/* <DateComponent /> */}
-                {/* <DateComponentFunctional /> */}
-                {/* useEffect */}
-                {/* userRef */}
-                {/* <Form /> */}
-                {/* userRef */}
-                {/* useCallback */}
-                <Increment />
-                {/* useCallback */}
-            </div>
-        );
-    }
+            {/* useState */}
+            {/* useEffect */}
+            {/* <DateComponent /> */}
+            {/* <DateComponentFunctional /> */}
+            {/* useEffect */}
+            {/* userRef */}
+            {/* <Form /> */}
+            {/* userRef */}
+            {/* useCallback */}
+            {/* <Increment /> */}
+            {/* useCallback */}
+            {/* useReducer */}
+            {/* <Counter /> <br /> */}
+            {/* <ComplexCounter /> */}
+            {/* useReducer */}
+            {/* useReducer with useEffect */}
+            {/* <GetPost /> */}
+            <GetPostReducer />
+            {/* useReducer with useEffect */}
+        </div>
+    );
 }
-
-export default App;
